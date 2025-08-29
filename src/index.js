@@ -129,7 +129,7 @@ async function playRaceEngine(character1, character2) {
 
         character2.PONTOS--;
         character2.PONTOS -= BOMB;
-        character1 += TURBO;
+        character1.PONTOS += TURBO;
       }
 
       if (powerResult2 > powerResult1 && character1.PONTOS > 0) {
@@ -139,7 +139,7 @@ async function playRaceEngine(character1, character2) {
         );
         character1.PONTOS--;
         character1.PONTOS -= BOMB;
-        character2 += TURBO;
+        character2.PONTOS += TURBO;
       }
 
       console.log(
